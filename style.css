@@ -1,0 +1,125 @@
+body{
+    background-color: rgba(9, 9, 121, 0.9);
+}
+.full-page{
+    height:100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows:0.5fr 3fr ;
+    grid-template-columns: 1fr 500px 1fr;
+    background-color: #090979;
+}
+h1{
+    grid-column: span 3;
+    text-align: center;
+    margin-top: 50px;
+    color: #797909;
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.col-1{
+    background-color: rgba(9, 9, 121, 0.9);
+  box-shadow:
+    0 0 30px 10px rgba(9, 9, 121, 0.3); 
+  border-radius: 10px; 
+}
+
+.game-col{
+    display: grid;
+    grid-template-rows: 0.5fr 500px .5fr;
+}
+.col-3{
+    background-color:#090979;
+}
+
+.row-1{
+    background-color: rgba(9, 9, 121, 0.9);
+    box-shadow:
+        0 0 30px 10px rgba(9, 9, 121, 0.3);
+    border-radius: 10px; 
+}
+
+.game-row{
+   background-color: #1e3799;
+   box-shadow:
+    0 0 20px rgba(0, 212, 255, 0.7),          
+    inset 0 0 15px rgba(0, 118, 255, 0.9),    
+    inset 0 0 25px rgba(0, 212, 255, 0.5);
+   border-radius: 8%;
+   width: 500px;
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-template-rows: 1fr 1fr;
+   gap:5%;
+}
+.row-3 {
+  background-color: rgba(9, 9, 121, 0.9);
+  box-shadow:
+    0 0 30px 10px rgba(9, 9, 121, 0.3); 
+  border-radius: 10px; 
+}
+
+.point{
+    margin:15px;
+    height:200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.green{
+    background-color: #16a085;
+    border: 2px solid #117A65;
+    box-shadow: 0 5px 12px #16a085aa;
+    box-shadow: 0 0 20px #1abc9c, 0 0 10px #1abc9c inset;
+}
+.red{
+   background-color:  #c0392b;
+   border: 2px solid  #7b241c;
+   box-shadow: 0 5px 12px #e74c3caa;
+   box-shadow: 0 0 20px #e74c3c, 0 0 10px #e74c3c inset;
+}
+.yellow{
+    background-color:#f39c12;
+    border: 2px solid  #b7950b ;
+    box-shadow: 0 5px 12px #f1c40faa;
+    box-shadow: 0 0 20px #f1c40f , 0 0 10px #f1c40f inset;
+   
+
+}
+.blue{
+    background-color: #2980b9 ;
+    border: 2px solid   #1f4f75 ;
+    box-shadow: 0 5px 12px #3498dbaa ;
+    box-shadow: 0 0 20px #3498db, 0 0 10px #3498db inset;
+}
+
+.green-pressed{
+    background-color:#117A65;
+    box-shadow:0 0 40px #117A65;
+}
+.game-over{
+    background-color: #EF101E;
+}
+
+@media (max-width:768){
+    .full-page{
+        grid-template-columns: 1fr 200px 1fr;
+    }
+    h1{
+        margin-top: 20px;
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    .game-col{
+        grid-template-rows: 0.5fr 200px .5fr;
+    }
+    .game-row{
+        width: 300px;
+    }
+    .point{
+        margin:15px;
+        height:150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+}
